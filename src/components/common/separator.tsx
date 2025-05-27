@@ -28,4 +28,16 @@ const Separator = React.forwardRef<
 )
 Separator.displayName = SeparatorPrimitive.Root.displayName
 
-export { Separator }
+const SeparatorWithText = ({ text = 'Or', className , ...props }: { text?: string; className?: string }) => {
+  return (
+    <div className={cn('flex items-center gap-2 w-full', className)}>
+      <Separator className="flex-1" />
+      <span className="text-sm text-muted-foreground mx-2">{text}</span>
+      <Separator className="flex-1" />
+    </div>
+  )
+}
+
+SeparatorWithText.displayName = 'SeparatorWithText'
+
+export { Separator , SeparatorWithText}

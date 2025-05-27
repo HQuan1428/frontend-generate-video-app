@@ -19,6 +19,9 @@ export default function Navbar() {
           <Button asChild>
             <Link href='/dashboard'>Dashboard</Link>
           </Button>
+          <Button asChild>
+            <Link href='/sign-in'>Sign In</Link>
+          </Button>
           <ThemeToggle />
         </div>
       </div>

@@ -2,7 +2,7 @@
 
 * text=auto eol=lf
 
-*.tsx text eol=lf
+*.tsx text eol=lf 
 *.ts text eol=lf
 *.js text eol=lf
 *.md text eol=lf

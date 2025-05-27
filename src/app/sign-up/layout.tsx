@@ -3,12 +3,12 @@ import React from 'react'
 import Navbar from '@/components/site/NavBar'
 
 export default function SiteLayout({
-  children,
+children,
 }: Readonly<{ children: React.ReactNode }>) {
-  return (
+return (
     <>
-      <Navbar />
-      <main className='grow'>{children}</main>
+    <Navbar />
+    <main className='grow'>{children}</main>
     </>
-  )
+)
 }
